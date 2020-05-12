@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Anna Silaeva](https://up.htmlacademy.ru/htmlcss/28/user/1078695).
-* Наставник: `Неизвестно`.
+* Наставник: [Forever Alone].
 
 ---
 
