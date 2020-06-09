@@ -584,8 +584,7 @@ li {
   margin-right: 20px;
 }
 
-.pop-item,
-.item {
+.pop-item {
   position: relative;
 
   display: flex;
@@ -698,6 +697,8 @@ li {
 .pop-item__name,
 .item__name {
   width: 157px;
+  padding: 0;
+  margin: 0;
 
   font-family: PT Sans;
   font-weight: 700;
@@ -1183,7 +1184,7 @@ li {
 
 .footer__feedback {
   margin-right: 50px;
-  
+
   font-size: 16px;
   line-height: 18px;
   color: var(--white);
@@ -1661,22 +1662,32 @@ li {
 }
 
 .goods {
-
-  /* ПЕРЕДЕЛАТЬ НА ГРИДЫ
-
-
-
-
-  */
-  display: flex;
-  flex-wrap: wrap;
+  padding: 0;
+  padding-bottom: 48px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 18px;
 }
 
 .item {
   position: relative;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 21px;
+
+  width: 220px;
+  min-height: 318px;
+
+  border: 1px solid var(--grey-border);
+
   overflow: hidden;
 }
+
+
 
 .item--new::before {
   content: "New";
