@@ -2368,3 +2368,112 @@ li {
   line-height: 24px;
   color: var(--black);
 }
+
+.basket-success {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  padding-top: 80px;
+  padding-left: 112px;
+  padding-right: 110px;
+  width: 620px;
+  height: 282px;
+
+  background: linear-gradient(var(--white), var(--white) 170px, #F4F4F4 170px);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75), inset 0 7px 0 #ff5358;
+
+  transform: translate(-295px, -141px);
+}
+
+.basket-success__sentence {
+  position: relative;
+
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 105px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+
+  color: var(--black);
+}
+
+.basket-success__sentence:before {
+  content: "";
+
+  position: absolute;
+  top: -18px;
+  left: -30px;
+
+  width: 66px;
+  height: 66px;
+
+  background-image: url("../img/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-size: 66px 66px;
+}
+
+.basket-success__make-order {
+  display: inline-block;
+  width: 192px;
+  min-height: 38px;
+  margin-right: 10px;
+  padding-top: 11px;
+
+  font: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--white);
+
+  background-color: var(--basic-red);
+}
+
+.basket-success__continue-shopping {
+  display: inline-block;
+  width: 192px;
+  min-height: 38px;
+  padding-top: 11px;
+
+  font: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--black);
+
+  background-color: var(--white);
+}
+
+.basket-success__btn {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+
+  width: 21px;
+  height: 21px;
+
+  background-color: transparent;
+  background-image: url("/img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-size: 21px 21px;
+
+  border: none;
+  outline: none;
+}
+
+.basket-success__btn:hover,
+.basket-success__btn:focus {
+  opacity: 0.5;
+}
+
+.basket-success__btn:active {
+  opacity: 0.2;
+}
