@@ -90,18 +90,20 @@
           <a class="product-types__button white__button" href="">Для стройки</a>
         </li>
       </ul>
-      <ul class="offers__slider slider">
-        <li class="slider__item slide slide--perforators">
+      <div class="offers__slider slider">
+        <button class="slider__toggle slider__toggle--prev" aria-label="Переключить на предыдущий слайд"></button>
+        <button class="slider__toggle slider__toggle--next" aria-label="Переключить на следующий слайд"></button>
+        <div class="slider__item slide slide--perforators">
           <h3 class="slide__title">Перфораторы</h3>
           <p class="slide__sentence">Настоящие мужские игрушки</p>
           <a class="slide__button" href="catalog.html">Открыть каталог</a>
-        </li>
-        <li class="slider__item slide slide--drills">
+        </div>
+        <div class="slider__item slide slide--drills slide--hidden">
           <h3 class="slide__title">Дрели</h3>
           <p class="slide__sentence">Соседям на радость!</p>
           <a class="slide__button" href="catalog.html">Открыть каталог</a>
-        </li>
-      </ul>
+        </div>
+      </div>
       <ul class="offers__extra extra">
         <li class="extra__item extra__item--discount">
           <h3 class="extra__title">Скидки 50%</h3>
@@ -233,28 +235,24 @@
 
     <section class="services">
       <div class="services__wrapper">
-        <input class="services__input1 visually-hidden" type="radio" name="toggle" id="delivery" checked>
-        <input class="services__input2 visually-hidden" type="radio" name="toggle" id="guarantee">
-        <input class="services__input3 visually-hidden" type="radio" name="toggle" id="credit">
         <h2 class="services__title">Сервисы</h2>
         <p class="services__sentence">Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="services__slider">
           <div class="services__controls">
-            <label class="services__control services__control--delivery services__control--current"
-              for="delivery">Доставка</label>
-            <label class="services__control services__control--guarantee" for="guarantee">Гарантия</label>
-            <label class="services__control services__control--credit" for="credit">Кредит</label>
+            <button class="services__control services__control--delivery services__control--current">Доставка</button>
+            <button class="services__control services__control--guarantee">Гарантия</button>
+            <button class="services__control services__control--credit">Кредит</button>
           </div>
           <ul class="services__list">
-            <li class="services__slide slide--delivery hidden">
+            <li class="services__slide slide--delivery services__slide--current">
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо
                 к&nbsp;вашему&nbsp;подъезду совершенно бесплатно!
                 Ведь&nbsp;мы&nbsp;неплохо заработаем,
                 поднимая&nbsp;его&nbsp;на&nbsp;ваш&nbsp;этаж!</p>
             </li>
-            <li class="services__slide slide--guarantee hidden">
+            <li class="services__slide slide--guarantee">
               <h3>Гарантия</h3>
               <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
                 возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом
@@ -398,6 +396,9 @@
     </form>
     <button class="write-us__close btn__close" type="button" aria-label="Закрыть форму"></button>
   </div>
+
+  <script src="js/slider.js"></script>
+  <script src="js/slider-services.js"></script>
 </body>
 
 </html>
