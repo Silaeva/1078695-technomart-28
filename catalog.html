@@ -8,7 +8,7 @@
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
     rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/min.style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -127,7 +127,8 @@
                   <input class="price__input price__input--min" id="min-price" name="min-price" type="text" value="0">
                   <span>&mdash;</span>
                   <label class="price__label price__label--max visually-hidden" for="max-price">до</label>
-                  <input class="price__input price__input--max" id="max-price" name="max-price" type="text" value="30 000">
+                  <input class="price__input price__input--max" id="max-price" name="max-price" type="text"
+                    value="30 000">
                 </div>
               </div>
             </fieldset>
@@ -162,12 +163,13 @@
               <legend class="filter__legend supply__legend">Питание:</legend>
               <ul class="supply__list">
                 <li class="supply__item">
-                  <input class="supply__input visually-hidden" type="radio" name="supply" value="accumulator" id="accumulator"
-                    checked>
+                  <input class="supply__input visually-hidden" type="radio" name="supply" value="accumulator"
+                    id="accumulator" checked>
                   <label class="supply__label" for="accumulator">Аккумуляторные</label>
                 </li>
                 <li class="supply__item">
-                  <input class="supply__input visually-hidden" type="radio" name="supply" value="from-line" id="from-line">
+                  <input class="supply__input visually-hidden" type="radio" name="supply" value="from-line"
+                    id="from-line">
                   <label class="supply__label" for="from-line">Сетевые</label>
                 </li>
               </ul>
@@ -336,7 +338,10 @@
     <section class="about-perforators">
       <h2 class="about-perforators__title">Пара слов о перфораторах</h2>
       <p class="about-perforators__content">
-        Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют&nbsp;электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В&nbsp;ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+        Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
+        бетоне и камне. Существуют&nbsp;электромеханические и пневматические перфораторы. Современные модели могут
+        выполнять функции дрели, шуруповерта и отбойного молотка. В&nbsp;ассортиментном ряду есть выбор
+        «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
       </p>
     </section>
   </main>
@@ -409,12 +414,14 @@
     </div>
   </footer>
 
-  <div class="popup__basket-success basket-success hidden">
+  <div class="popup__basket-success basket-success">
     <p class="basket-success__sentence">Товар добавлен в корзину!</p>
     <a class="basket-success__make-order" href="">Оформить заказ</a>
     <a class="basket-success__continue-shopping" href="">Продолжить покупки</a>
-    <button class="basket-success__btn" type="button" aria-label="Закрыть окно уведомления"></button>
+    <button class="basket-success__close-btn" type="button" aria-label="Закрыть окно уведомления"></button>
   </div>
+
+  <script src="js/basket.js"></script>
 
 </body>
 

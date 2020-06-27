@@ -8,7 +8,7 @@
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
     rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/min.style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -366,7 +366,7 @@
     </div>
   </footer>
 
-  <div class="popup__map map hidden">
+  <div class="popup__map map">
     <img class="map__image" src="img/map.jpg"
       alt="Мы находимся по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="943" height="449">
     <iframe class="map__iframe"
@@ -375,17 +375,17 @@
     <button class="map__close btn__close" aria-label="Закрыть карту"></button>
   </div>
 
-  <div class="popup__write-us write-us hidden">
+  <div class="popup__write-us write-us">
     <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label class="write-us__label write-us__label--name" for="user-name">Ваше имя:</label>
         <input class="write-us__input write-us__input--name" type="text" name="name" placeholder="Имя Фамилия"
-          id="user-name" required>
+          id="user-name">
       </p>
       <p>
         <label class="write-us__label write-us__label--email" for="user-email">Ваш e-mail:</label>
         <input class="write-us__input write-us__input--email" type="email" name="email" placeholder="email@example.com"
-          id="user-email" required>
+          id="user-email">
       </p>
       <p>
         <label class="write-us__label write-us__label--message" for="user-message">Текст письма:</label>
@@ -399,6 +399,8 @@
 
   <script src="js/slider.js"></script>
   <script src="js/slider-services.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/form.js"></script>
 </body>
 
 </html>
